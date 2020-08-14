@@ -1,4 +1,5 @@
 def solution(routes):
+<<<<<<< HEAD
     routes = sorted(routes, key=lambda x: x[1])
     print routes
     temp = routes[0][1]
@@ -17,3 +18,11 @@ def solution(routes):
 
 route_input = [[-20, 15], [-14, -5], [-18, -13], [-5, -3]]
 solution(route_input)
+=======
+    answer = 0
+    return answer
+
+
+routes_input = [[-20,15], [-14,-5], [-18,-13], [-5,-3]]
+solution(routes_input)
+>>>>>>> origin/master

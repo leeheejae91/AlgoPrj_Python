@@ -17,6 +17,9 @@ class robot:
     def get_loc(self):
         return [self.left, self.right]
 
+    def get_revers_loc(self):
+        return [self.right, self.left]
+
     def set_loc(self, loc):
         self.left = loc[0]
         self.right = loc[1]
@@ -33,7 +36,7 @@ def solution(board):
 
         if [n, n] in cur_robot.get_loc():
             break
-        elif cur_robot.get_loc() not in visited:
+        elif cur_robot.get_loc() not in visited and cur_robot.get_revers_loc() not in visited:
             visited.append(cur_robot.get_loc())
             que.extend(find_path(board, cur_robot))
     answer = 0

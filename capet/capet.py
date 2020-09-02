@@ -4,6 +4,7 @@ red = 1
 red_arr = []
 ans_arr = []
 
+for i in range(len(brown))
 if red == 1:
     red_arr.append(1)
 else :

@@ -11,7 +11,7 @@ for i in range(len(arr)):
     if (i + 1) % 3 != 0:
         answer += arr[i]
 
-print answer
+print(answer)
 
-for i in range(2,100,3):
-    print i
+for i in range(2, 100, 3):
+    print(i)
